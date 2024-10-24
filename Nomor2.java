@@ -6,12 +6,10 @@ public class Nomor2{
         double harga = 0;
         double diskon = 0;
 
-        Scanner scanner = new Scanner(System.in);
-
         System.out.print("Masukan nama produk [Labubu/Jenglot/kita]: ");
         Labubu = scanner.next();
         System.out.print("Masukan nama produk [Labubu/Jenglot/kita]: ");
-        Jenglot= scanner.next();
+        Jenglot= scanner.nextInt();
         System.out.print("Masukan nama produk [Labubu/Jenglot/kita]: ");
         Labubu = scanner.next();
 
@@ -35,11 +33,5 @@ public class Nomor2{
         } else if (harga >=100000) {
             diskon = harga*0.15;
         }
-
-        System.out.println("Jumlah pembelian: " + barang);
-
-        System.out.println("Diskon " + diskon);
-        System.out.println("Jumlah uang yang diterima: " + harga);
-
     }
 }
